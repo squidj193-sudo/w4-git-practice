@@ -3,12 +3,17 @@
    學生練習：修改顏色、字體大小等
    ============================ */
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Noto Sans TC', sans-serif;
   /* 練習：把背景色改成你喜歡的顏色 */
-  background-color: #f5efe6; /* 和紙米白 */
+  background-color: #f5efe6;
+  /* 和紙米白 */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +21,8 @@ body {
 }
 
 .container {
-  background: #fdfaf5; /* 白練（ほぎしろ） */
+  background: #fdfaf5;
+  /* 白練（ほぎしろ） */
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(60, 30, 20, 0.12);
   width: 480px;
@@ -26,14 +32,23 @@ body {
 
 header {
   /* 練習：把標題列顏色從藍色改成其他顏色 */
-  background: #2b2022; /* 墨色 */
+  background: #2b2022;
+  /* 墨色 */
   color: #f5efe6;
   padding: 20px 24px;
-  border-bottom: 3px solid #c0392b; /* 弁柄朱紅 */
+  border-bottom: 3px solid #c0392b;
+  /* 弁柄朱紅 */
 }
 
-header h1 { font-size: 20px; }
-header .subtitle { font-size: 13px; opacity: 0.75; margin-top: 4px; }
+header h1 {
+  font-size: 20px;
+}
+
+header .subtitle {
+  font-size: 13px;
+  opacity: 0.75;
+  margin-top: 4px;
+}
 
 #chat-box {
   height: 360px;
@@ -54,7 +69,8 @@ header .subtitle { font-size: 13px; opacity: 0.75; margin-top: 4px; }
 }
 
 .message.bot {
-  background: #ede0cc; /* 淡い練色（うすれんしょく） */
+  background: #ede0cc;
+  /* 淡い練色（うすれんしょく） */
   color: #3a2a20;
   align-self: flex-start;
   border-bottom-left-radius: 4px;
@@ -62,7 +78,8 @@ header .subtitle { font-size: 13px; opacity: 0.75; margin-top: 4px; }
 
 .message.user {
   /* 練習：把使用者訊息顏色從綠色改成你喜歡的顏色 */
-  background: #c0392b; /* 弁柄（べんがら）朱紅 */
+  background: #c0392b;
+  /* 弁柄（べんがら）朱紅 */
   color: #fdfaf5;
   align-self: flex-end;
   border-bottom-right-radius: 4px;
@@ -95,7 +112,8 @@ header .subtitle { font-size: 13px; opacity: 0.75; margin-top: 4px; }
   /* 練習：把按鈕顏色改成你喜歡的顏色
      conflict-a 分支：改成 #4f8ef7（藍色）
      conflict-b 分支：改成 #e84393（粉色）  */
-  background: #c0392b; /* 弁柄朱紅 */
+  background: #c0392b;
+  /* 弁柄朱紅 */
   color: #fdfaf5;
   border: none;
   padding: 10px 20px;
@@ -107,22 +125,3 @@ header .subtitle { font-size: 13px; opacity: 0.75; margin-top: 4px; }
 .input-area button:hover {
   background: #96281b;
 }
-
-/* ===== feature/dark-mode 新增 ===== */
-.dark-toggle {
-  margin-top: 8px;
-  background: rgba(255,255,255,0.2);
-  border: none;
-  color: white;
-  padding: 4px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-body.dark { background-color: #1e1e2e; }
-body.dark .container { background: #313244; color: #cdd6f4; }
-body.dark header { background: #1e1e2e; }
-body.dark .message.bot { background: #45475a; color: #cdd6f4; }
-body.dark .input-area { border-top-color: #45475a; }
-body.dark .input-area input { background: #45475a; color: #cdd6f4; border-color: #585b70; }
