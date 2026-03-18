@@ -2,29 +2,35 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>W4 練習 Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern AI Chatbot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
     <header>
-      <h1>🤖 練習用 Chatbot</h1>
-      <!-- 練習一：把標題改成你們組的名字 -->
-      <p class="subtitle">W4 Git Branch 練習</p>
-      <button class="dark-toggle" onclick="document.body.classList.toggle('dark')">🌙 深色模式</button>
+      <div class="header-info">
+        <h1>🤖 Chat Assistant</h1>
+        <p class="subtitle">Next-gen Git Branch Practice</p>
+      </div>
+      <button class="dark-toggle" onclick="document.body.classList.toggle('dark')">🌙 Mode</button>
     </header>
 
     <div id="chat-box">
       <div class="message bot">
-        嗨！我是練習用的 Chatbot，今天我們要學 Git Branch 🌿
+        Hello! I'm your modern chat assistant. Let's explore Git branches with style! 🌿
       </div>
     </div>
 
     <div class="input-area">
-      <input id="user-input" type="text" placeholder="輸入訊息...">
-      <!-- 練習二：把按鈕文字改成你喜歡的文字 -->
-      <button onclick="sendMessage()">送出</button>
+      <input id="user-input" type="text" placeholder="Type a message..." autocomplete="off">
+      <button onclick="sendMessage()" id="send-btn">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
     </div>
   </div>
 
